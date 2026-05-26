@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adsterra Auto Refresh</title>
+    <meta http-serif="refresh" content="40">
+    <title>Adsterra</title>
     <style>
         html, body {
             margin: 0;
@@ -20,34 +21,16 @@
 </head>
 <body>
 
-    <div id="ad-box" style="width: 320px; height: 50px;"></div>
-
     <script type="text/javascript">
-        var refreshInterval = 40000; 
-
-        function loadNewAd() {
-            var container = document.getElementById('ad-box');
-            container.innerHTML = ''; 
-
-            window.atOptions = {
-                'key' : 'ec9ea278354f0489abb6c7fbf74a446b',
-                'format' : 'iframe',
-                'height' : 50,
-                'width' : 320,
-                'params' : {}
-            };
-
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = 'https://www.highperformanceformat.com/ec9ea278354f0489abb6c7fbf74a446b/invoke.js?cb=' + Math.random();
-            
-            container.appendChild(script);
-        }
-
-        loadNewAd();
-
-        setInterval(loadNewAd, refreshInterval);
+        atOptions = {
+            'key' : 'ec9ea278354f0489abb6c7fbf74a446b',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+        };
     </script>
+    <script type="text/javascript" src="https://www.highperformanceformat.com/ec9ea278354f0489abb6c7fbf74a446b/invoke.js"></script>
 
 </body>
 </html>
