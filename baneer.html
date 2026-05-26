@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adsterra Banner</title>
+    <title>Adsterra Dynamic Banner</title>
     <style>
         html, body {
             margin: 0;
@@ -21,6 +21,7 @@
 <body>
 
     <div id="container-ec9ea278354f0489abb6c7fbf74a446b"></div>
+
     <script type="text/javascript">
         atOptions = {
             'key' : 'ec9ea278354f0489abb6c7fbf74a446b',
@@ -31,5 +32,20 @@
         };
     </script>
     <script type="text/javascript" src="https://www.highperformanceformat.com/ec9ea278354f0489abb6c7fbf74a446b/invoke.js"></script>
-    </body>
+
+    <script type="text/javascript">
+        // الوقت بالملي ثانية (40000 مللي ثانية = 40 ثانية)
+        // يمكنك تغيير هذا الرقم ليكون أسرع أو أبطأ
+        var refreshInterval = 40000; 
+
+        // دالة تقوم بتحديث الصفحة لعرض إعلان جديد
+        function refreshAd() {
+            window.location.reload(); 
+        }
+
+        // تشغيل دالة التحديث تلقائياً بعد مرور الوقت المحدد
+        setTimeout(refreshAd, refreshInterval);
+    </script>
+
+</body>
 </html>
